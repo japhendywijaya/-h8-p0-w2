@@ -59,8 +59,8 @@ Loop
 
 4)Periksa Kuku
 CREATE VARIABLE 'jumlah-students' INPUT with max students
+CREATE VARIABLE ARRAY "kuku-student-[0] to 'jumlah-students'-1 "
 CREATE VARIABLE 'max-panjang-kuku'
-CREATE VARIABLE ARRAY 'students' 1 to 'jumlah-students'
 CREATE VARIABLE 'index-id'
 
 CREATE FUNCTION 'periksa-kuku'
@@ -68,12 +68,23 @@ CREATE FUNCTION 'cek-panjang-kuku'
 CREATE FUNCTION 'reward'
 CREATE FUNCTION 'punishment'
 
+
 SET 'max-panjang-kuku' as 2
+Set 'index-id' as 0
 
 
 START FUNCTION 'periksa-kuku'
-FOR ('student[0]' less then equal 'jumlah-students')
+FOR ( 'index-id' less then equal ('jumlah-students'-1)  )
 	RUN FUNCTION 'cek-panjang-kuku'
+		STORE RESULT of 'cek-panjang-kuku' to 'kuku-student-['index-id']'
+
+	IF ('kuku-student-['index-id']' <= 'max-panjang-kuku')
+		THEN RUN FUNCTION 'reward'
+	ELSE
+		RUN FUNCTION 'punishment'
+	
+	ADD 1 to 'index-id'
+Loop
 
 
 

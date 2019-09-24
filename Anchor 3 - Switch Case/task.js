@@ -45,10 +45,11 @@ switch (bulan) {
         break;
 }
 
-console.log (tanggal, bulanName, tahun)
+
 
 console.log (tanggal + " " + bulanName + " " + tahun)
 
+//variasi aja
 console.log (tanggal + bulanName + tahun)
 
 
