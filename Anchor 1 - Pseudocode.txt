@@ -1,0 +1,83 @@
+1)Newton Second Law
+CREATE VARIABLE 'massa'
+CREATE VARIABLE 'percepatan'
+CREATE VARIABLE 'resultan-gaya'
+
+INPUT 'massa' with 600
+INPUT 'percepatan' with 2
+
+CALCULATE 'resultan-gaya' as 'massa' times 'percepatan'
+DISPLAY 'resultan-gaya'
+
+
+
+2)Tahun Kabisat
+CREATE VARIABLE 'current-year'
+CREATE VARIABLE 'current-year-status'
+
+INPUT 'current-year' with any number
+
+CALCULATE 
+IF ( (modulus 'current-year' with 4 equal 0) AND (modulus 'current-year' with 100 greater than 0) )
+	THEN 'current-year-status' equal "kabisat", 
+
+ELSE IF ( (modulus 'current-year' with 4 equal 0) AND (modulus 'current-year' with 100 equal 0) AND (modulus 'current-year' with 400 equal 0) )
+	THEN 'current-year-status' equal "kabisat",
+
+ELSE 'current-year-status' equal "non-kabisat"
+
+DISPLAY 'current-year-status'
+
+
+3)Laundry Day
+CREATE VARIABLE 'jumlah-pakaian-yang-mau-dicuci'
+CREATE VARIABLE 'jumlah-pakaian-sekarang'
+
+SET 'jumlah-pakaian-sekarang' with 0
+
+CREATE FUNCTION 'turn-on-machine'
+CREATE FUNCTION 'masukin-pakaian'
+CREATE FUNCTION 'begin-washing'
+
+INPUT 'jumlah-pakaian-yang-mau-dicuci' with 20 
+
+
+
+START FUNCTION 'turn-on-machine'
+
+FOR ('jumlah-pakaian-sekarang' less then equal 'jumlah-pakaian-yang-mau-dicuci')
+	IF ('jumlah-pakaian-sekarang' equal 'jumlah-pakaian-yang-mau-dicuci)
+	  THEN RUN FUNCTION 'begin-washing'
+	  BREAK
+
+	Else
+	  RUN FUNCTION 'masukin-pakaian'
+	  ADD 1 to 'jumlah-pakaian-sekarang'
+Loop
+
+
+
+4)Periksa Kuku
+CREATE VARIABLE 'jumlah-students' INPUT with max students
+CREATE VARIABLE 'max-panjang-kuku'
+CREATE VARIABLE ARRAY 'students' 1 to 'jumlah-students'
+CREATE VARIABLE 'index-id'
+
+CREATE FUNCTION 'periksa-kuku'
+CREATE FUNCTION 'cek-panjang-kuku'
+CREATE FUNCTION 'reward'
+CREATE FUNCTION 'punishment'
+
+SET 'max-panjang-kuku' as 2
+
+
+START FUNCTION 'periksa-kuku'
+FOR ('student[0]' less then equal 'jumlah-students')
+	RUN FUNCTION 'cek-panjang-kuku'
+
+
+
+
+
+
+	
