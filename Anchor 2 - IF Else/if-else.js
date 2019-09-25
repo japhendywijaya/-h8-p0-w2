@@ -2,7 +2,7 @@ var nama ="Zero"
 var peran ="Penyihir"
 
 
-if (nama==='' || peran==='') {
+if (nama==='' && peran==='') {
     console.log('Nama harus diisi')
 
 }else if (nama==='mikael' && peran==="") {
