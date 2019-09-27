@@ -12,17 +12,17 @@
 
         DONE-UPLOAD - [Exercises 7] Perulangan - Play with Asterisks
 
-[Exercises 8] JavaScript Building Blocks: Codecademy JavaScript Course (Unit 3 - Functions)
+    DONE - [Exercises 8] JavaScript Building Blocks: Codecademy JavaScript Course (Unit 3 - Functions)
 
         DONE-UPLOAD - [Exercises 9] Berlatih Penggunaan Functions    
 
-    DONE - [Exercises 10] Bandingkan Angka
+        DONE-UPLOAD - [Exercises 10] Bandingkan Angka
 
-    DONE - [Exercises 11] Balik Kata
+        DONE-UPLOAD - [Exercises 11] Balik Kata
 
-    DONE - [Exercises 12] Konversi Menit
+        DONE-UPLOAD - [Exercises 12] Konversi Menit
 
-    DONE - [Exercises 13] X dan O
+        DONE-UPLOAD - [Exercises 13] X dan O
 
 
 
