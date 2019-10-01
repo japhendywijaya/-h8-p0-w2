@@ -1,6 +1,6 @@
         DONE-UPLOAD - [Exercises 1] Berlatih dengan Pseudocode
 
-    DONE - [Exercises 2] Codecademy JavaScript Building Blocks: Unit 1 and 2 - Intro and Control Flow only
+        DONE -UPLOAD - [Exercises 2] Codecademy JavaScript Building Blocks: Unit 1 and 2 - Intro and Control Flow only
 
         DONE-UPLOAD - [Exercises 3] Mengenal penggunaan Conditional if-elsedalam JavaScript
 
@@ -12,7 +12,7 @@
 
         DONE-UPLOAD - [Exercises 7] Perulangan - Play with Asterisks
 
-    DONE - [Exercises 8] JavaScript Building Blocks: Codecademy JavaScript Course (Unit 3 - Functions)
+        DONE -UPLOAD - [Exercises 8] JavaScript Building Blocks: Codecademy JavaScript Course (Unit 3 - Functions)
 
         DONE-UPLOAD - [Exercises 9] Berlatih Penggunaan Functions    
 

@@ -80,6 +80,7 @@ for(counter; counter<=100; counter+=2){
         console.log(counter + ' adalah kelipatan 3')
     }
     else{
+        console.log('')
     }
 
 
@@ -101,6 +102,7 @@ for(counter; counter<=100; counter+=5){
         console.log(counter + ' adalah kelipatan 6')
     }
     else{
+        console.log('')
     }
 
 
@@ -123,6 +125,7 @@ for(counter; counter<=100; counter+=9){
         console.log(counter + ' adalah kelipatan 10')
     }
     else{
+        console.log('')
     }
 
 
